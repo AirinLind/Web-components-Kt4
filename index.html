@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор расходов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="expense-calculator">
+    <h1>Калькулятор расходов</h1>
+    <form id="expense-form">
+      <input type="text" id="expense-name" placeholder="Название расхода" required>
+      <input type="number" id="expense-amount" placeholder="Сумма" required min="0">
+      <button type="submit">Добавить расход</button>
+    </form>
+    <ul id="expense-list"></ul>
+    <h2>Общая сумма: <span id="total-amount">0</span> ₽</h2>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
